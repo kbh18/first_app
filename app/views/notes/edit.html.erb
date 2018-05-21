@@ -1,0 +1,8 @@
+<div class="edit"><h1>수정하자</h1>
+    <form action='/notes_update'>
+        <input name ='note_id' type='hidden' value=<%= @note.id %>></input>
+        <input type ='text' name = 'star' value=<%= @note.star %>></input>
+        <input type ='text' name ='nation' value=<%= @note.nation %>></input>
+        <input type ='submit'></input>
+    </form>
+</div>

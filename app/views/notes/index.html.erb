@@ -1,0 +1,21 @@
+<div class="outer">
+    <h3><<<<<<멋사의 영웅>>>>>></h3>
+    <div class="middle">
+        <p><a href = '/notes/new'><<새글 쓰러가기>></a> <a href = '/'><<첫 페이지>></a></p>
+    </div>
+        <div class="inner"><table>
+            <tr>
+                <th>NUMBER</th>
+                <th>영웅</th>
+            </tr>
+            <% @notes.each do |note| %>
+            <tr>
+                <!--<li><a href='/notes/%= note.id %>'>%= note.star %> %= note.nation %></a></li>-->
+                <th><a href='/notes/<%= note.id %>'><%= note.star %></a></th>
+                <th><%= note.nation %></th>
+            </tr>
+            <% end %>
+            </table>
+    </div>
+    
+</div>
